@@ -1,1 +1,10 @@
-node_modules
+# dependencies
+node_modules/
+
+# next.js output
+.next/
+out/
+
+# misc
+.env
+.DS_Store
