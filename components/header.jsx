@@ -13,7 +13,7 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 bg-white/70 backdrop-blur-sm py-5 px-6 font-mono app-container">
+    <header className="sticky top-0 z-50 bg-white/85 py-5 px-6 font-mono app-container">
       <div className="flex items-center gap-10">
         {navItems.map(({ href, label }) => {
           const isActive =

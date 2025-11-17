@@ -35,13 +35,19 @@
   --text-subHero--line-height: 31px; 
   --color-text-subHero: #3D3D3D;
 
-  --font-size-display: 3.25rem; /* 52px */
+  --color-text-description: #3C5168;
+  --color-text-date: #888888;
+  --color-text-projectName: #1F2732;
+
+
 
 
   /* Custom tracking */
   --tracking-tight: -0.02em;  /* Figma -2% */
   --tracking-extra-tight: -0.04em;    /* Figma -4% */
   --tracking-nav: 0.02rem;
+
+  --color-border-light: #D1D1D1;
 }
 
 /* 5. Actual theme values (light mode) */
