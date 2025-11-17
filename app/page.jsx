@@ -13,7 +13,7 @@ export default function Home() {
       </div>
     </main>
 
-    <div className="app-container px-6 mb-32 grid grid-cols-1 md:grid-cols-2 gap-12">
+    <div className="app-container px-6 mb-32 grid grid-cols-1 md:grid-cols-2 gap-[58px_12px]">
       <ProjectCard
         title="Vancouver Coastal Health (VCH) Internship"
         category="UX Design"

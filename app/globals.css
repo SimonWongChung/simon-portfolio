@@ -27,6 +27,8 @@
   --text-nav: 0.875rem;                /* font-size */
   --text-nav--line-height: 1.5;        /* optional, line-height */
 
+   --text-footer: 0.875rem;
+
   /* WORK Page */
   --text-hero: 2.125rem;/* 34px */
   --text-hero--line-height: 42px; 
