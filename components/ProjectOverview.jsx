@@ -12,19 +12,19 @@ export default function ProjectOverview({
   heroImage,
 }) {
   return (
-    <div className="space-y-8">
-      {/* Breadcrumb */}
-      <div className="text-xs tracking-nav text-foreground/50 uppercase">
+    <div className="">
+      {/* Project Name */}
+      <div className="projectHeader font-mono text-[#6B7280] uppercase mb-3">
         {breadcrumb}
       </div>
 
       {/* Title */}
-      <h1 className="text-hero leading-[42px] max-w-3xl">
+      <div className="text-projectTitle text-text-projectTitle max-w-3xl mb-8">
         {title}
-      </h1>
+      </div>
 
       {/* Hero image */}
-      <div className="mt-6 border border-[#D1D1D1] overflow-hidden">
+      <div className="border border-[#D1D1D1] overflow-hidden mb-8">
         <Image
           src={heroImage}
           alt={title}
@@ -35,23 +35,34 @@ export default function ProjectOverview({
       </div>
 
       {/* Meta row */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-xs uppercase tracking-nav">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         <div>
-          <div className="text-foreground/50 mb-1">Role</div>
-          <div className="text-foreground/80"> {role} </div>
+          <div className="text-highlight uppercase text-[#6B7280] font-mono mb-1">Role</div>
+          <div className="text-foreground text-highlight tracking-tight"> {role} </div>
         </div>
         <div>
-          <div className="text-foreground/50 mb-1">Timeline</div>
-          <div className="text-foreground/80">{timeline}</div>
+          <div className="text-highlight uppercase text-[#6B7280] font-mono mb-1">Timeline</div>
+          <div className="text-foreground text-highlight tracking-tight">{timeline}</div>
         </div>
         <div>
-          <div className="text-foreground/50 mb-1">Team</div>
-          <div className="text-foreground/80">{team}</div>
+          <div className="text-highlight uppercase text-[#6B7280] font-mono mb-1">Team</div>
+          {/* <div className="text-foreground text-highlight tracking-tight">{team}</div> */}
+
+          <div className="text-foreground text-highlight tracking-tight">
+            {team.map((member) => (
+                <div key={member}>{member}</div>
+                ))}
+          </div>
         </div>
         <div>
-          <div className="text-foreground/50 mb-1">Skills</div>
-          <div className="text-foreground/80">
+          <div className="text-highlight uppercase text-[#6B7280] font-mono mb-1">Skills</div>
+          {/* <div className="text-foreground text-highlight tracking-tight">
             {skills.join(" • ")}
+          </div> */}
+          <div className="text-foreground text-highlight tracking-tight">
+            {skills.map((skill) => (
+                <div key={skill}>{skill}</div>
+                ))}
           </div>
         </div>
       </div>

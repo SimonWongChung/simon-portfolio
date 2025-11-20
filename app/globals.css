@@ -41,6 +41,12 @@
   --color-text-date: #888888;
   --color-text-projectName: #1F2732;
 
+  /* Project Page */
+  --text-projectHeader: 1rem; /* 16px */
+  --text-projectTitle: 2.5rem; /* 40px */
+  --text-projectTitle--line-height: 50px;
+  --text-highlight: 15px;
+
 
 
 

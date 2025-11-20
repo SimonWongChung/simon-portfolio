@@ -95,7 +95,7 @@ export default function ProjectSideNav({ sections }) {
       {/* Back Button */}
       <button
         onClick={() => router.push("/")}
-        className="mb-6 text-foreground/60 hover:text-foreground transition-colors"
+        className="mb-6 text-foreground/60 hover:text-foreground transition-colors cursor-pointer"
       >
         ← Back
       </button>
