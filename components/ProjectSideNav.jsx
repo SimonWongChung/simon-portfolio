@@ -91,17 +91,17 @@ export default function ProjectSideNav({ sections }) {
   }, [sections]);
 
   return (
-    <nav className="sticky top-24 text-sm font-mono">
+    <nav className="sticky top-24">
       {/* Back Button */}
       <button
         onClick={() => router.push("/")}
-        className="mb-6 text-foreground/60 hover:text-foreground transition-colors cursor-pointer"
+        className="text-backButton font-mono uppercase mb-10 text-foreground/60 hover:text-foreground transition-colors cursor-pointer"
       >
         ← Back
       </button>
 
       {/* Section Links */}
-      <ul className="space-y-2">
+      <ul className="space-y-3 text-projectNav tracking-tight">
         {sections.map(({ id, label }) => {
           const isActive = id === activeId;
 

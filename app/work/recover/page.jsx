@@ -40,7 +40,7 @@ export default function RecoverTogetherPage() {
                         "Usability Testing",
                         "Prototyping",
                     ]}
-                    heroImage="/images/recover-hero.png"
+                    heroImage="/assets/recover/recover-project-preview.png"
                 />
             </section>
 
