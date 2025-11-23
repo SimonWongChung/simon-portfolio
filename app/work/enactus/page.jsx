@@ -2,11 +2,15 @@
 import ProjectSideNav from "@/components/ProjectSideNav";
 import ProjectOverview from "@/components/ProjectOverview";
 import Image from "next/image";
+import ExpandableImage from "@/components/ExpandableImage";
 
 const sections = [
   { id: "overview", label: "Overview" },
   { id: "solution", label: "Final Website" },
   { id: "components", label: "Components Overview" },
+  { id: "communication", label: "Communication" },
+  { id: "inputs", label: "Inputs" },
+  { id: "cta", label: "CTA" },
   { id: "learnings", label: "Learnings" },
 ];
 
@@ -58,9 +62,15 @@ export default function RecoverTogetherPage() {
                 <h4 className="projectHeader font-mono text-[#6B7280] uppercase mb-3">
                     Final Website
                 </h4>
-                <p className="tracking-tight text-foreground">
-                    Recover Together was designed to bridge the gap between displaced residents and volunteer resources, providing a platform for wildfire victims struggling to find help and volunteers unsure of how and where to assist. In this six-week academic project, my team of three grounded our idea through user research, leading to the development of the app's interactive features. I was primarily responsible for user research, designing the mobile interface features and conducting usability testings.
-                </p>
+
+                <ExpandableImage
+                    src="/assets/enactus/final-website.png"
+                    alt="Final Website"
+                    width={1200}
+                    height={700}
+                    className="border border-[#E4E8EB] overflow-hidden mb-8"
+                    modalClassName="max-h-[90vh] object-contain"
+                />
             </section>
 
             <section id="components" className="scroll-mt-28">
@@ -68,7 +78,7 @@ export default function RecoverTogetherPage() {
                 <h4 className="projectHeader font-mono text-[#6B7280] uppercase mb-3">
                     Components Overview
                 </h4>
-                <div className="border border-[#D1D1D1] overflow-hidden mb-8">
+                {/* <div className="border border-[#D1D1D1] overflow-hidden mb-8">
                 <Image
                     src="/assets/enactus/component-overview.png" 
                     alt="Components Overview"
@@ -76,11 +86,80 @@ export default function RecoverTogetherPage() {
                     height={700}
                     className="w-full h-auto object-cover"
                 />
-                </div>
+                </div> */}
+
+                <ExpandableImage
+                    src="/assets/enactus/component-overview.png"
+                    alt="Components Overview"
+                    width={1200}
+                    height={700}
+                    className="border border-[#E4E8EB] overflow-hidden mb-10"
+                    modalClassName="max-h-[90vh] object-contain"
+                />
+
+                 <ExpandableImage
+                    src="/assets/enactus/component-overview-2.png"
+                    alt="Components Overview 2"
+                    width={1200}
+                    height={700}
+                    className="border border-[#E4E8EB] overflow-hidden mb-8"
+                    modalClassName="max-h-[90vh] object-contain"
+                />
+            </section>
+
+            <section id="communication" className="scroll-mt-28">
+                {/* Communication */}
+                <h4 className="projectHeader font-mono text-[#6B7280] uppercase mb-3">
+                    Communication
+                </h4>
+                <ExpandableImage
+                    src="/assets/enactus/communication.png"
+                    alt="Communication"
+                    width={1200}
+                    height={700}
+                    className="border border-[#E4E8EB] overflow-hidden mb-8"
+                    modalClassName="max-h-[90vh] object-contain"
+                />
+            </section>
+
+            <section id="inputs" className="scroll-mt-28">
+                {/* Inputs*/}
+                <h4 className="projectHeader font-mono text-[#6B7280] uppercase mb-3">
+                    Inputs
+                </h4>
+                <ExpandableImage
+                    src="/assets/enactus/inputs.png"
+                    alt="Inputs"
+                    width={1200}
+                    height={700}
+                    className="border border-[#E4E8EB] overflow-hidden mb-8"
+                    modalClassName="max-h-[90vh] object-contain"
+                />
+            </section>
+
+            <section id="cta" className="scroll-mt-28">
+                <h4 className="projectHeader font-mono text-[#6B7280] uppercase mb-3">
+                    CTA
+                </h4>
+                {/* CTA*/}
+                <ExpandableImage
+                    src="/assets/enactus/CTA.png"
+                    alt="CTA"
+                    width={1200}
+                    height={700}
+                    className="border border-[#E4E8EB] overflow-hidden mb-8"
+                    modalClassName="max-h-[90vh] object-contain"
+                />
             </section>
 
             <section id="learnings" className="scroll-mt-28">
                 {/* Learnings */}
+                <h4 className="projectHeader font-mono text-[#6B7280] uppercase mb-3">
+                    Learnings
+                </h4>
+                <p className="tracking-tight text-foreground">
+                    Through this project, I learned that maintaining a design system is more challenging than it appears. What I designed in Figma didn’t always translate directly into development, which made me realize the importance of proper documentation and collaboration with developers. I found that developers may interpret design components differently, so having clear communication—and some understanding of web and app development—helps bridge that gap. This experience also emphasized the need for quality assurance to ensure the final product reflects the intended design. Overall, it taught me that building a design system isn’t just about consistency in visuals, but also in process, communication, and implementation.
+                </p>
             </section>
             </article>
 

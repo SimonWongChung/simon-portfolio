@@ -24,7 +24,7 @@ export default function ProjectOverview({
       </div>
 
       {/* Hero image */}
-      <div className="border border-[#D1D1D1] overflow-hidden mb-8">
+      <div className="border border-[#E4E8EB] overflow-hidden mb-8">
         <Image
           src={heroImage}
           alt={title}

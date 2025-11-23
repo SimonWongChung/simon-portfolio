@@ -107,7 +107,7 @@ export default function ProjectSideNav({ sections }) {
 
           return (
             <li key={id}>
-              <a
+              {/* <a
                 href={`#${id}`}
                 className={
                   isActive
@@ -116,7 +116,24 @@ export default function ProjectSideNav({ sections }) {
                 }
               >
                 {label}
-              </a>
+              </a> */}
+                <a
+                    href={`#${id}`}
+                    onClick={(e) => {
+                        e.preventDefault(); // stop instant jump navigation
+                        document.getElementById(id)?.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                        });
+                    }}
+                    className={
+                        isActive
+                        ? "block text-foreground font-medium transition-colors"
+                        : "block text-foreground/50 hover:text-foreground transition-colors"
+                    }
+                    >
+                    {label}
+                </a>
             </li>
           );
         })}
