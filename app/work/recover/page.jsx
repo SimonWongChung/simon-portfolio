@@ -3,6 +3,7 @@ import ProjectSideNav from "@/components/ProjectSideNav";
 import ProjectOverview from "@/components/ProjectOverview";
 import Image from "next/image";
 import ProjectVideo from "@/components/ProjectVideo";
+import ProjectTwoColumn from "@/components/ProjectTwoColumn";
 
 const sections = [
   { id: "overview", label: "Overview" },
@@ -132,6 +133,14 @@ export default function RecoverTogetherPage() {
                 <h4 className="projectHeader font-mono text-[#6B7280] uppercase mb-3">
                     Features
                 </h4>
+
+                <ProjectTwoColumn
+                sectionLabel="LEARNINGS"
+                title="Make a Help Request"
+                body="Users can accept a volunteer's help within the messaging interface…"
+                videoSrc="/assets/recover/videos/Make_A_Request.mov"
+                // imageBgClass="bg-[#E5BB9F]"
+                />
             </section>
 
             <section id="testing" className="scroll-mt-28">
