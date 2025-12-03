@@ -17,20 +17,20 @@ const ProjectTwoColumn = ({
   return (
     <section className="scroll-mt-28">
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-start">
+      <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-6 items-start mb-8">
         
         {/* MEDIA (image OR video) */}
         <div className={imageWrapperOrder}>
-          <div className={`${imageBgClass} p-10 md:p-14`}>
+          <div className={`${imageBgClass}`}>
 
             {/* If videoSrc exists → show video; else show image */}
             {videoSrc ? (
               <video
                 src={videoSrc}
-                autoPlay
+                autoPlay 
                 loop
-                muted
-                playsInline
+                muted // important: required for autoPlay on most browsers
+                playsInline // prevents IOS from forcing fullscreen
                 className="w-full h-auto"
               />
             ) : (
@@ -47,15 +47,15 @@ const ProjectTwoColumn = ({
         </div>
 
         {/* TEXT */}
-        <div className={`space-y-3 ${textWrapperOrder}`}>
+        <div className={`self-end space-y-2 ${textWrapperOrder}`}>
           {title && (
-            <h3 className="font-semibold text-[20px] text-foreground">
+            <h3 className="font-semibold text-[16px] text-foreground">
               {title}
             </h3>
           )}
 
           {body && (
-            <div className="text-[14px] leading-relaxed text-foreground/80">
+            <div className="tracking-tight text-foreground">
               {typeof body === "string" ? <p>{body}</p> : body}
             </div>
           )}
