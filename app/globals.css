@@ -1,0 +1,200 @@
+/* 1. Core Tailwind import */
+@import "tailwindcss";
+
+/* 2. Animations (pick ONE of these depending on your package) */
+/* If you're using a Tailwind plugin like `tailwindcss-animate`: */
+/* @plugin "tailwindcss-animate"; */
+
+/* If `tw-animate-css` is a CSS file/package, keep this instead: */
+@import "tw-animate-css";
+
+/* 3. Dark mode variant: use `.dark` on <html> or <body> */
+@custom-variant dark (&:is(.dark *));
+
+/* 4. Global design system tokens (static stuff) */
+@theme {
+  /* Breakpoints */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 960px;
+  --breakpoint-xl: 1200px;
+
+  /* You can also add spacing, shadows, etc. here later if you want */
+
+
+  /* Custom font sizes */
+  /* Nav */
+  --text-nav: 0.875rem;                /* font-size */
+  --text-nav--line-height: 1.5;        /* optional, line-height */
+
+   --text-footer: 0.875rem;
+
+  /* WORK Page */
+  --text-hero: 2.125rem;/* 34px */
+  --text-hero--line-height: 42px; 
+
+  --text-subHero: 1.5rem;/* 24px */
+  --text-subHero--line-height: 31px; 
+  --color-text-subHero: #3D3D3D;
+
+  --color-text-description: #3C5168;
+  --color-text-date: #888888;
+  --color-text-projectName: #1F2732;
+
+  /* Project Page */
+  --text-projectHeader: 1rem; /* 16px */
+  --text-projectTitle: 2.5rem; /* 40px */
+  --text-projectTitle--line-height: 50px;
+  --text-highlight: 15px;
+
+  /* Project Side Nav */
+  --text-backButton: 14px;
+  --text-projectNav: 1rem;
+
+
+  /* Custom tracking */
+  --tracking-tight: -0.02em;  /* Figma -2% */
+  --tracking-extra-tight: -0.04em;    /* Figma -4% */
+  --tracking-nav: 0.02rem;
+
+  --color-border-light: #D1D1D1;
+}
+
+/* 5. Actual theme values (light mode) */
+:root {
+  --radius: 0.625rem;
+
+  --background: oklch(100% 0.00011 271.152);
+  --foreground: oklch(0.129 0.042 264.695);
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.129 0.042 264.695);
+
+  --popover: oklch(1 0 0);
+  --popover-foreground: #020618;
+
+  --primary: #0f172b;
+  --primary-foreground: oklch(0.984 0.003 247.858);
+
+  --secondary: oklch(0.968 0.007 247.896);
+  --secondary-foreground: oklch(0.208 0.042 265.755);
+
+  --muted: oklch(0.968 0.007 247.896);
+  --muted-foreground: oklch(0.554 0.046 257.417);
+
+  --accent: oklch(0.968 0.007 247.896);
+  --accent-foreground: oklch(0.208 0.042 265.755);
+
+  --destructive: oklch(0.577 0.245 27.325);
+
+  --border: oklch(0.929 0.013 255.508);
+  --input: oklch(0.929 0.013 255.508);
+  --ring: oklch(0.704 0.04 256.788);
+
+  --sidebar: oklch(0.984 0.003 247.858);
+  --sidebar-foreground: oklch(0.129 0.042 264.695);
+  --sidebar-primary: oklch(0.208 0.042 265.755);
+  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-accent: oklch(0.968 0.007 247.896);
+  --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
+  --sidebar-border: oklch(0.929 0.013 255.508);
+  --sidebar-ring: oklch(0.704 0.04 256.788);
+
+  --nav-selected: #000000;
+  --nav-default: #5D5D5D;
+
+  --sub-hero: #3D3D3D;
+}
+
+/* 6. Dark theme overrides */
+
+
+/* 7. Map CSS vars → Tailwind tokens (inline theme) */
+@theme inline {
+  /* Colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-destructive: var(--destructive);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* New stuff added */
+  --color-nav-selected: var(--nav-selected);
+  --color-nav-default: var(--nav-default);
+  --color-sub-hero: var(--sub-hero)
+
+  /* Radii (Tailwind's rounded-* classes) */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  /* Fonts (assuming Next font variables are set in layout.tsx) */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  
+}
+
+/* 8. Base layer: global element styles that use Tailwind tokens */
+@layer base {
+  * {
+    /* @apply border-border outline-ring/50; */
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer utilities {
+  .app-container {
+    margin-inline: auto;
+    /* padding-inline: 15px; */
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .app-container { max-width: 640px; }
+  }
+  @media (min-width: 768px) {
+    .app-container { max-width: 768px; }
+  }
+  @media (min-width: 1024px) {
+    .app-container { max-width: 1200px; }
+  }
+  @media (min-width: 1400px) {
+    .app-container { max-width: 1550px; }
+  }
+}
