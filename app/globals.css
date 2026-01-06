@@ -57,7 +57,14 @@
   --tracking-extra-tight: -0.04em;    /* Figma -4% */
   --tracking-nav: 0.02rem;
 
+
+  /* Border */
   --color-border-light: #D1D1D1;
+
+  /* ABOUT Page */
+  --text-about: 0.875rem;/* 14px */
+  --text-about--line-height: 20px; 
+  --color-text-about: #3C5168;
 }
 
 /* 5. Actual theme values (light mode) */
