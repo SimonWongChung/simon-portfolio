@@ -135,7 +135,7 @@ export default function vchPage() {
                     </p>
                 </div>
                 <ProjectVideo
-                    src="/assets/vch/videos/solution.mov"
+                    src="/assets/vch/videos/Solution_compressed.mov"
                     className="w-full h-auto mt-8 border border-[#E4E8EB]"
                 />
             </section>
