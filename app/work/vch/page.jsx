@@ -1,4 +1,4 @@
-// app/work/recover-together/page.jsx
+// app/work/vch/page.jsx
 import ProjectSideNav from "@/components/ProjectSideNav";
 import ProjectOverview from "@/components/ProjectOverview";
 import Image from "next/image";
@@ -7,13 +7,12 @@ import ProjectTwoColumn from "@/components/ProjectTwoColumn";
 
 const sections = [
   { id: "overview", label: "Overview" },
-  { id: "research", label: "Research" },
-  { id: "challenge", label: "Challenge" },
+  { id: "problem", label: "Problem" },
+  { id: "insights", label: "Insights" },
   { id: "solution", label: "Solution" },
-  { id: "features", label: "Features" },
-  { id: "testing", label: "Usability Testing and Improvements" },
-  { id: "flows", label: "Core Flows" },
-  { id: "learnings", label: "Learnings" },
+  { id: "design", label: "Design Decision" },
+  { id: "system", label: "Design System" },
+  { id: "reflection", label: "Reflection" },
 ];
 
 export default function vchPage() {
@@ -49,242 +48,225 @@ export default function vchPage() {
                 />
             </section>
 
-            <section id="overview" className="scroll-mt-28">
+            <section id="overview" className="scroll-mt-28 space-y-4">
                 {/* Overview */}
-                <h4 className="projectHeader font-mono text-[#6B7280] uppercase mb-3">
+                <h4 className="text-projectHeader font-mono text-[#6B7280] uppercase">
                     Overview
                 </h4>
-                <p className="tracking-tight text-foreground">
-                    Recover Together was designed to bridge the gap between displaced residents and volunteer resources, providing a platform for wildfire victims struggling to find help and volunteers unsure of how and where to assist. In this six-week academic project, my team of three grounded our idea through user research, leading to the development of the app's interactive features. I was primarily responsible for user research, designing the mobile interface features and conducting usability testings.
+                <p className="text-mainLine tracking-tight">
+                    VCH is a healthcare organization supporting thousands of employees across diverse roles and digital skill levels
+                </p>
+                <p className="tracking-tight text-foreground/70">
+                    As a new workforce management platform was rolled out to frontline employees and people managers, many struggled to navigate its complexity. I designed an end-to-end onboarding and learning experience to support confident system adoption across roles.
                 </p>
             </section>
 
-            <section id="research" className="scroll-mt-28">
-                {/* Research */}
-                <h4 className="projectHeader font-mono text-[#6B7280] uppercase mb-3">
-                    Research
+            <section id="problem" className="scroll-mt-28 space-y-4">
+                {/* Problem */}
+                <h4 className="text-projectHeader font-mono text-[#6B7280] uppercase">
+                    Problem
                 </h4>
-                <p className="tracking-tight text-foreground">
-                    {/* JSX sometimes collapses or removes whitespace around inline elements. Developers add {" "} to force an explicit space where JSX would otherwise omit it. */}
-                    Primary research involved {" "} <span className="font-semibold">interviewing 8 individuals</span> and engaging with wildfire-focused Facebook groups for insights into wildfire aftermath, while secondary research included analyzing over {" "} <span className="font-semibold">20 Quora and Reddit posts</span>, news articles, and academic papers.
+                <p className="text-mainLine tracking-tight">
+                    Complex platform for a large user base of varied digital literacy
                 </p>
-
-                <p className="mt-6 mb-2 font-semibold">
-                    Impacted Demographics
+                <p className="tracking-tight text-foreground/70">
+                    Unionized and excluded employees followed different timekeeping processes, and many were not tech-savvy, feeling overwhelmed by a system that directly affected scheduling, time-off, and pay. With limited time, managers required deeper system knowledge, yet existing resources were fragmented and difficult to navigate. Any errors could directly impact payroll and workforce operations.
                 </p>
-                <p>
-                    Part of my Interviews and secondary research revealed two major demographics affected post-wildfire: <span className="font-semibold">displaced residents struggling to find basic necessities due to policy restrictions and reach</span>, and <span className="font-semibold">independent volunteers unsure where and how to contribute</span>. This highlighted a gap where a design intervention could address their pain points.
+                <p className="tracking-tight text-foreground/70">
+                    To better understand where users struggled, I analyzed key workflows across employee types and roles.
                 </p>
-                <Image
-                    src="/assets/recover/research-1.png"
-                    alt="Displaced Residents"
-                    width={600}
-                    height={400}
-                    className="border border-[#E4E8EB] w-full h-auto object-cover mt-6"
-                />
-                <p className="mt-2 italic text-[#6B7280]">— Experience of displaced residents</p>
-
-                <Image
-                    src="/assets/recover/research-2.png"
-                    alt="Affected Volunteers"
-                    width={600}
-                    height={400}
-                    className="border border-[#E4E8EB] w-full h-auto object-cover mt-6"
-                />
-                <p className="mt-2 italic text-[#6B7280]">— Experience of independent volunteers</p>
-
-                <p className="mt-10">Visually representing the interconnected needs of the two demographics and identifying gaps where effective design interventions could be developed.</p>
-                <Image
-                    src="/assets/recover/research-3.png"
-                    alt="Venn Diagram"
-                    width={600}
-                    height={400}
-                    className="border border-[#E4E8EB] w-full h-auto object-cover mt-4"
-                />
-                <p className="mt-2 italic text-[#6B7280]">— Venn diagram showing common pain points</p>
             </section>
 
-            <section id="challenge" className="scroll-mt-28">
-                {/* Solution */}
-                <h4 className="projectHeader font-mono text-[#6B7280] uppercase mb-3">
-                    Challenge
-                </h4>
-                <p className="text-[24px] leading-[32px]">
-                    How might we streamline the connection between volunteers offering assistance and wildfire-affected residents in dire need of resources?
-                </p>
+            <section id="insights" className="scroll-mt-28">
+                {/* Key Insight 1 */}
+                <div className="space-y-4">
+                    <h4 className="text-projectHeader font-mono text-[#6B7280] uppercase tracking-[-0.01em]">
+                        Key Insights
+                    </h4>
+                    <p className="text-mainLine tracking-tight">
+                        Different employee classifications created divergent task flows
+                    </p>
+                    <p className="tracking-tight text-foreground/70">
+                        Mapping employee journeys revealed that unionized and excluded employees used the same interface but followed different timekeeping workflows. While excluded employees could bypass certain steps, unionized employees were required to complete mandatory procedures, creating friction and confusion within a shared system.
+                    </p>
+                </div>
+                <Image
+                    src="/assets/vch/insight-1.png"
+                    alt="Key Insight 1"
+                    width={600}
+                    height={400}
+                    className="border border-[#E4E8EB] w-full h-auto object-cover mt-8"
+                />
+            </section>
+
+            <section className="scroll-mt-28">
+                {/* Key Insight 2 */}
+                <div className="space-y-4">
+                    <h4 className="text-projectHeader font-mono text-[#6B7280] uppercase tracking-[-0.01em]">
+                        Key Insights
+                    </h4>
+                    <p className="text-mainLine tracking-tight">
+                        Critical workflows required too many steps to recall reliably
+                    </p>
+                    <p className="tracking-tight text-foreground/70">
+                        While employees and managers could now complete many tasks digitally, most workflows involved too many steps to recall reliably. Small variations between similar tasks increased cognitive load and introduced risk, particularly for high-impact actions such as payroll and scheduling.
+                    </p>
+                </div>
+                <Image
+                    src="/assets/vch/insight-2.png"
+                    alt="Key Insight 2"
+                    width={600}
+                    height={400}
+                    className="border border-[#E4E8EB] w-full h-auto object-cover mt-8"
+                />
             </section>
 
             <section id="solution" className="scroll-mt-28">
                 {/* Solution */}
-                <h4 className="projectHeader font-mono text-[#6B7280] uppercase mb-3">
-                    Solution
-                </h4>
-                <p className="mt-3">Recover Together is a mobile application that enables displaced residents to post requests for assistance and allows volunteers to view and offer the needed help. The intent is to bridge the gap between impacted residents seeking resources and community volunteers offering those resources.</p>
+                    <div className="space-y-4">
+                    <h4 className="text-projectHeader font-mono text-[#6B7280] uppercase">
+                        Solution
+                    </h4>
+                    <p className="text-mainLine tracking-tight">
+                        Role-based onboarding and learning experiences
+                    </p>
+                    <p className="tracking-tight text-foreground/70">
+                        I designed role-based onboarding journeys broken down into short, focused units, allowing each user group to learn key tasks through scenarios and simulations. This structure reduced cognitive load by guiding users through only the workflows relevant to their role, while reinforcing critical differences in procedures.
+                    </p>
+                </div>
                 <ProjectVideo
-                    src="/assets/recover/initial-solution.mov"
-                    className="w-full h-auto mt-4 border border-[#E4E8EB]"
+                    src="/assets/vch/videos/solution.mov"
+                    className="w-full h-auto mt-8 border border-[#E4E8EB]"
                 />
             </section>
 
-            <section id="features" className="scroll-mt-28">
-                {/* Core Features */}
-                <h4 className="projectHeader font-mono text-[#6B7280] uppercase mb-3">
-                    Features
+            <section id="design" className="scroll-mt-28">
+                {/* Design Decision */}
+                <h4 className="text-projectHeader font-mono text-[#6B7280] uppercase">
+                    Design Decisions
                 </h4>
-
-                <ProjectTwoColumn
-                    sectionLabel="LEARNINGS"
-                    title="Make a Help Request"
-                    body="Our research showed that displaced residents faced a significant challenge in finding resources. To address this issue, the New Request tab allows impacted residents to post requests for help. They can specify the resources or skills needed and provide an accompanying description and location."
-                    videoSrc="/assets/recover/videos/Make_A_Request.mov"
-                    // imageBgClass="bg-[#E5BB9F]"
-                />
-
-                <ProjectTwoColumn
-                    sectionLabel="LEARNINGS"
-                    title="Offer Help"
-                    body="Volunteers often have difficulty finding effective ways to support wildfire relief with the resources they have. Recover Together lets users browse community help requests and offer assistance where needed. Requests are organized by tags, and users can apply filters to quickly find categories that match their abilities, reducing cognitive overload and streamlining the search for meaningful opportunities."
-                    videoSrc="/assets/recover/videos/Offer_Help.mov"
-                />
-
-                <ProjectTwoColumn
-                    sectionLabel="LEARNINGS"
-                    title="Accepting an Offer to Help"
-                    body="To accept a volunteer's offer to help, users can start by chatting with the volunteer through in-app messaging. After the conversation, they can officially accept the offer right in the chat. There's also a location-sharing feature to make coordinating resource drop-offs easier."
-                    videoSrc="/assets/recover/videos/Accept_Help.mov"
-                />
-
-                <ProjectTwoColumn
-                    sectionLabel="LEARNINGS"
-                    title="View Activity and Notifications"
-                    body="In the Activity page, within the Request tab, users can see an overview of notifications and the status of their posted requests for help or offers to provide help. The My Requests and My Offers pages allow users to view and track their current and past requests and offers."
-                    videoSrc="/assets/recover/videos/Accept_Help.mov"
-                />
-            </section>
-
-            <section id="testing" className="scroll-mt-28">
-                {/* Usability Testing and Improvements */}
-                <h4 className="projectHeader font-mono text-[#6B7280] uppercase mb-3">
-                    Usability Testing and Improvements
-                </h4>
-                <p className="mt-3">The prototype was evaluated with {" "} <span className="font-semibold">six participants</span>, and the gathered insights were used to refine the features. The study aimed to assess how easily users can find and use the app's most vital features to accomplish primary goals. Usability targets were identified, and participants from our user demographic were given realistic tasks to complete using the Think Aloud method.</p>
-                
-                <div className="mt-6 mb-8">
-                    <p className="mb-2 font-semibold">
-                        Update: Make a help request
-                    </p>
-                    <Image
-                        src="/assets/recover/Make_a_Request_Update.png"
-                        alt="Make a Help Request Update"
-                        width={600}
-                        height={400}
-                        className="border border-[#E4E8EB] w-full h-auto object-cover mt-2 mb-2"
-                    />
-                    <p className="text-[15px] mb-2">
-                        {" "} <span className="font-semibold">Problem:</span> Users were confused as the term 'request' was used in multiple sections, such as the explore page and request tab, leading to ambiguity about which requests were theirs and which belonged to others.
-                    </p>
-                    <p className="text-[15px]">
-                        {" "} <span className="font-semibold">Update:</span> Icons were added to make the request feature more noticeable in the requests tab. Copywriting for offering help and posting requests has been revised to differentiate the two.
-                    </p>
-                </div>
-
-                <div className="mt-6 mb-8">
-                    <p className="mb-2 font-semibold">
-                        Update: Offer help
-                    </p>
-                    <Image
-                        src="/assets/recover/Offer_Help_Update.png"
-                        alt="Offer Help Update"
-                        width={600}
-                        height={400}
-                        className="border border-[#E4E8EB] w-full h-auto object-cover mt-2 mb-2"
-                    />
-                    <p className="text-[15px] mb-2">
-                        {" "} <span className="font-semibold">Problem:</span> Users were confused between projects and requests, making it difficult to find request posts they could help with.
-                    </p>
-                    <p className="text-[15px]">
-                        {" "} <span className="font-semibold">Update:</span> Content design was restructured to make finding request posts easy and memorable.
-                    </p>
-                </div>
-
-                <div className="mt-6 mb-8">
-                    <p className="mb-2 font-semibold">
-                        Update: Viewing activity to accept help offers
-                    </p>
-                    <Image
-                        src="/assets/recover/Viewing_Activity_Update.png"
-                        alt="Viewing activity to accept help offers Update"
-                        width={600}
-                        height={400}
-                        className="border border-[#E4E8EB] w-full h-auto object-cover mt-2 mb-2"
-                    />
-                    <p className="text-[15px] mb-2">
-                        {" "} <span className="font-semibold">Problem:</span> Users had trouble distinguishing between notifications for offers to help and acceptances, making it cumbersome to accept help offers.
-                    </p>
-                    <p className="text-[15px]">
-                        {" "} <span className="font-semibold">Update:</span> The Explore tab was changed to the Activity tab to give users a dedicated section for viewing responses to their help requests and offers. This restructuring emphasizes understanding who is offering help before engaging.
-                    </p>
+                <div className="mt-4 space-y-13">
+                    <div>
+                        <p className="text-secondaryLine tracking-tight mb-2">
+                            Role-based onboarding and learning experiences
+                        </p>
+                        <p className="tracking-tight text-foreground/70">
+                            By mirroring real-world use, users are able to build accurate mental models of the system, gain confidence in their actions, and understand the purpose behind each task rather than following arbitrary steps.
+                        </p>
+                        <ProjectVideo
+                            src="/assets/vch/videos/DesignDecision-1-Scenarios.mov"
+                            className="w-full h-auto mt-5 border border-[#E4E8EB]"
+                        />
+                    </div>
+                    <div>
+                        <p className="text-secondaryLine tracking-tight mb-2">
+                            Immersing users through a simulation
+                        </p>
+                        <p className="tracking-tight text-foreground/70">
+                            Users are immersed directly within the platform, with contextual hotspots guiding attention to the correct actions at each step.
+                        </p>
+                        <ProjectVideo
+                            src="/assets/vch/videos/DesignDecision-2.mov"
+                            className="w-full h-auto mt-5 border border-[#E4E8EB]"
+                        />
+                    </div>
+                    <div>
+                        <p className="text-secondaryLine tracking-tight mb-2">
+                            Step-by-step guidance to support varied digital literacy
+                        </p>
+                        <p className="tracking-tight text-foreground/70">
+                            Each step within the simulation was explicitly described to support users with varied levels of digital literacy and reduce reliance on prior system knowledge.
+                        </p>
+                        <ProjectVideo
+                            src="/assets/vch/videos/DesignDecision-3-Steps.mov"
+                            className="w-full h-auto mt-5 border border-[#E4E8EB]"
+                        />
+                    </div>
+                    <div>
+                        <p className="text-secondaryLine tracking-tight mb-2">
+                            Breaking down complex workflows
+                        </p>
+                        <p className="tracking-tight text-foreground/70">
+                            I applied progressive disclosure by breaking complex workflows into short, focused units, allowing users to learn tasks incrementally and choose where to start or return as needed.
+                        </p>
+                        <ProjectVideo
+                            src="/assets/vch/videos/DesignDecision-4-Complex.mov"
+                            className="w-full h-auto mt-5 border border-[#E4E8EB]"
+                        />
+                    </div>
+                    <div>
+                        <p className="text-secondaryLine tracking-tight mb-2">
+                            Assessing users' understanding of the platform
+                        </p>
+                        <p className="tracking-tight text-foreground/70">
+                            Using instructional design principles, I introduced self-assessments that allowed users to validate their understanding, reinforce learning, and build a sense of ownership before returning to the live system.
+                        </p>
+                        <ProjectVideo
+                            src="/assets/vch/videos/DesignDecision-5-Assessment.mov"
+                            className="w-full h-auto mt-5 border border-[#E4E8EB]"
+                        />
+                    </div>
                 </div>
             </section>
 
-            <section id="flows" className="scroll-mt-28">
-                {/* Final User Flows */}
-                <h4 className="projectHeader font-mono text-[#6B7280] uppercase mb-3">
-                    Final Core User Flows
-                </h4>
-                <p className="mt-3">After incorporating insights from usability testing, the experience of achieving the main tasks was improved.</p>
-
-                <div className="mt-6 mb-8">
-                    <p className="mb-2 font-semibold">
-                        Making a help request post — Impacted Resident
+            <section id="system" className="scroll-mt-28">
+                {/* Design System */}
+                <div className="space-y-4">
+                    <h4 className="text-projectHeader font-mono text-[#6B7280] uppercase tracking-[-0.01em]">
+                        Design System
+                    </h4>
+                    <p className="text-mainLine tracking-tight">
+                        Design system documentation for scalable handoff
                     </p>
-                    <ProjectVideo
-                        src="/assets/recover/videos/Making_a_Help_Request.mov"
-                        className="w-full h-auto border border-[#E4E8EB]"
-                    />
-                    <p className="text-[15px] mt-2">
-                        Impacted residents can request help through the Request tab under the Request Help page or the new button accessible across the app.
+                    <p className="tracking-tight text-foreground/70">
+                        The documentation defined foundations for colour, typography, and components, along with clear guidelines for structuring onboarding journeys and individual screens to ensure consistency during handoff.
                     </p>
                 </div>
-
-                <div className="mt-6 mb-8">
-                    <p className="mb-2 font-semibold">
-                        Accepting an offer to help — Impacted Resident
-                    </p>
-                    <ProjectVideo
-                        src="/assets/recover/videos/Accepting_an_Offer_to_Help.mov"
-                        className="w-full h-auto border border-[#E4E8EB]"
-                    />
-                    <p className="text-[15px] mt-2">
-                        Impacted residents can accept a volunteer's offer to help under the My Requests page in the Activity tab or in the chat with the volunteer.
-                    </p>
-                </div>
-
-                <div className="mt-6 mb-8">
-                    <p className="mb-2 font-semibold">
-                        Offering assistance to a help request post — Volunteer
-                    </p>
-                    <ProjectVideo
-                        src="/assets/recover/videos/Offering_Help.mov"
-                        className="w-full h-auto border border-[#E4E8EB]"
-                    />
-                    <p className="text-[15px] mt-2">
-                        Volunteers can choose a post to help with from the Offer Help page in the Request tab and send a message before offering help.
-                    </p>
+                <div className="mt-8 space-y-10">
+                <Image
+                    // src="/assets/vch/Design System.png"
+                    src="/assets/vch/DesignSystem.png"
+                    alt="Design System"
+                    width={600}
+                    height={400}
+                    className="border border-[#E4E8EB] w-full h-auto object-cover"
+                />
+                <Image
+                    src="/assets/vch/Guideline.png"
+                    alt="Design System"
+                    width={600}
+                    height={400}
+                    className="border border-[#E4E8EB] w-full h-auto object-cover"
+                />
                 </div>
             </section>
 
-            <section id="learnings" className="scroll-mt-28">
-                {/* Learnings */}
-                <h4 className="projectHeader font-mono text-[#6B7280] uppercase mb-3">
-                    Learnings
+            <section id="reflection" className="scroll-mt-28">
+                {/* Reflection */}
+                <h4 className="projectHeader font-mono text-[#6B7280] uppercase mb-4">
+                    Reflection
                 </h4>
-                <p className="tracking-tight text-foreground">
-                    During this project, I conducted my first usability study, and it was an enlightening experience that taught me the importance of user-centered design. {" "} <span className="font-semibold">Despite our assumptions about the app's usability, direct user feedback highlighted issues we had not anticipated.</span> This process made me realize that our assumptions about how easy the app might be to use for end users only made sense to us as designers, as we were part of the design process from start to finish. 
+                <p className="text-mainLine tracking-tight">
+                    What I Learned
                 </p>
-                <p className="tracking-tight text-foreground mt-3">
-                    Although I designed the app with the end user in mind at every step, the final product's usability could only be confirmed through testing. The usability study uncovered critical areas for improvement, allowing us to {" "} <span className="font-semibold">integrate user feedback and create a more intuitive, efficient, and enjoyable user experience.</span> This experience reinforced the need for continuous testing and iteration, ultimately leading to a more effective solution for our users.
-                </p>
+                <div className="mt-7 grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-7">
+                    <div className="space-y-3">
+                        <p className="text-[20px] tracking-tight">
+                            The simplest designs can be the best solution
+                        </p>
+                        <p className="tracking-tight text-foreground/70">
+                            Designing for users with varied digital literacy reinforced that simple experiences are the result of careful decisions. Reducing cognitive load meant understanding complex workflows and intentionally deciding what to guide, simplify, or remove.
+                        </p>
+                    </div>
+                    <div className="space-y-3">
+                        <p className="text-[20px] tracking-tight">
+                            Design is not as straightforward and simple as it can seem
+                        </p>
+                        <p className="tracking-tight text-foreground/70">
+                            Working within technical limitations and aligning with multiple stakeholders showed me that design is rarely linear. Iteration was often driven by constraints, and learning to adapt while still advocating for users was a key takeaway.
+                        </p>
+                    </div>
+                </div>
             </section>
             </article>
 
