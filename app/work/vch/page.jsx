@@ -16,7 +16,7 @@ const sections = [
   { id: "learnings", label: "Learnings" },
 ];
 
-export default function RecoverTogetherPage() {
+export default function vchPage() {
   return (
     <main className="app-container px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_minmax(0,768px)_1fr] gap-x-8">
@@ -32,22 +32,20 @@ export default function RecoverTogetherPage() {
             <article className="space-y-12">
             <section className="scroll-mt-28 mb-24">
                 <ProjectOverview
-                    breadcrumb="Recover Together"
-                    title="Bridging the gap between wildfire survivors and volunteer support"
-                    role="Product Designer"
-                    timeline="March – April 2024"
+                    breadcrumb="VCH INTERNSHIP"
+                    title="Helping employees and managers adopt a new workforce management system"
+                    role="UX Designer"
+                    timeline="January - August 2025"
                     // team="3 Designers"
                     team={[
-                        "Alison Lu",
-                        "Seth van der Zweep"
+                        "Sole Designer"
                     ]}
                     skills={[
-                        "Product Design",
-                        "UX Research",
-                        "Usability Testing",
+                        "UX Design",
                         "Prototyping",
+                        "Information Architecture",
                     ]}
-                    heroImage="/assets/recover/recover-project-preview.png"
+                    heroImage="/assets/vch/vch-project-preview.png"
                 />
             </section>
 
