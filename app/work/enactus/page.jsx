@@ -1,4 +1,4 @@
-// app/work/recover-together/page.jsx
+// app/work/enactus/page.jsx
 import ProjectSideNav from "@/components/ProjectSideNav";
 import ProjectOverview from "@/components/ProjectOverview";
 import Image from "next/image";
@@ -14,7 +14,7 @@ const sections = [
   { id: "learnings", label: "Learnings" },
 ];
 
-export default function RecoverTogetherPage() {
+export default function EnactusPage() {
   return (
     <main className="app-container px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_minmax(0,768px)_1fr] gap-x-8">
@@ -30,7 +30,7 @@ export default function RecoverTogetherPage() {
             <article className="space-y-12">
             <section className="scroll-mt-28 mb-24">
                 <ProjectOverview
-                    breadcrumb="Recover Together"
+                    breadcrumb="Enactus SFU Design System"
                     title="Creating a design system from the ground up and designed the website UI"
                     role="Product Designer"
                     timeline="August – October 2024"
