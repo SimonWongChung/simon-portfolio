@@ -24,14 +24,14 @@ export default function Home() {
       />
 
 
-      <ProjectCard
+      {/* <ProjectCard
         title="Unify"
         category="Product Design"
         year="2025"
         description="Designing a mobile app to guide newcomers in Canada."
         thumbnail="/assets/work/unify.png"
         href="/work/unify"
-      />
+      /> */}
 
       <ProjectCard
         title="Enactus SFU Design System"
