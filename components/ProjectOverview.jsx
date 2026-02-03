@@ -10,6 +10,7 @@ export default function ProjectOverview({
   team,
   skills,
   heroImage,
+  mediaType = "image", // Default to image if not specified
 }) {
   return (
     <div className="">
@@ -24,7 +25,7 @@ export default function ProjectOverview({
       </div>
 
       {/* Hero image */}
-      <div className="border border-[#E4E8EB] overflow-hidden mb-8">
+      {/* <div className="border border-[#E4E8EB] overflow-hidden mb-8">
         <Image
           src={heroImage}
           alt={title}
@@ -32,6 +33,28 @@ export default function ProjectOverview({
           height={700}
           className="w-full h-auto object-cover"
         />
+      </div> */}
+
+      {/* Hero media */}
+      <div className="border border-[#E4E8EB] overflow-hidden mb-8">
+        {mediaType === "video" ? (
+          <video
+            src={heroImage}
+            className="w-full h-auto object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        ) : (
+          <Image
+            src={heroImage}
+            alt={title}
+            width={1200}
+            height={700}
+            className="w-full h-auto object-cover"
+          />
+        )}
       </div>
 
       {/* Meta row */}
@@ -46,7 +69,6 @@ export default function ProjectOverview({
         </div>
         <div>
           <div className="text-highlight uppercase text-[#6B7280] font-mono mb-1">Team</div>
-          {/* <div className="text-foreground text-highlight tracking-tight">{team}</div> */}
 
           <div className="text-foreground text-highlight tracking-tight">
             {team.map((member) => (
@@ -56,9 +78,6 @@ export default function ProjectOverview({
         </div>
         <div>
           <div className="text-highlight uppercase text-[#6B7280] font-mono mb-1">Skills</div>
-          {/* <div className="text-foreground text-highlight tracking-tight">
-            {skills.join(" • ")}
-          </div> */}
           <div className="text-foreground text-highlight tracking-tight">
             {skills.map((skill) => (
                 <div key={skill}>{skill}</div>

@@ -23,15 +23,15 @@ export default function Home() {
         href="/work/vch"
       />
 
-
-      {/* <ProjectCard
+      <ProjectCard
         title="Unify"
         category="Product Design"
         year="2025"
         description="Designing a mobile app to guide newcomers in Canada."
-        thumbnail="/assets/work/unify.png"
+        thumbnail="/assets/work/unify-work.mov"
         href="/work/unify"
-      /> */}
+        mediaType="video"
+      />
 
       <ProjectCard
         title="Enactus SFU Design System"
