@@ -4,12 +4,13 @@ import ProjectOverview from "@/components/ProjectOverview";
 import Image from "next/image";
 import ProjectVideo from "@/components/ProjectVideo";
 import ProjectTwoColumn from "@/components/ProjectTwoColumn";
+import CoreFlow from "@/components/CoreFlow";
 
 const sections = [
   { id: "overview", label: "Overview" },
   { id: "problem", label: "Problem" },
   { id: "solution", label: "Solution" },
-//   { id: "design", label: "Design Decision" },
+  { id: "flows", label: "Core Flows" },
 //   { id: "system", label: "Design System" },
 //   { id: "reflection", label: "Reflection" },
 ];
@@ -149,6 +150,36 @@ export default function vchPage() {
                 <ProjectVideo
                     src="/assets/unify/videos/Solution Video.mov"
                     className="w-full h-auto mt-8 border border-[#E4E8EB]"
+                />
+            </section>
+
+            <section id="flows" className="scroll-mt-28">
+                <h4 className="text-projectHeader font-mono text-[#6B7280] uppercase mb-4">
+                    Core Flows
+                </h4>
+
+                <CoreFlow
+                    title="Choose a focused topic"
+                    body="Browse structured topics within each subject to learn one essential system at a time."
+                    videoSrc="/assets/unify/videos/CoreFlow2.mov"
+                />
+
+                <CoreFlow
+                    title="Learn at your own pace"
+                    body="Read clear, step-by-step lessons designed for newcomers with no prior context."
+                    videoSrc="/assets/unify/videos/CoreFlow3.mov"
+                />
+
+                <CoreFlow
+                    title="Quick check, no pressure"
+                    body="Optionally review key ideas to reinforce understanding before moving on."
+                    videoSrc="/assets/unify/videos/CoreFlow4.mov"
+                />
+
+                <CoreFlow
+                    title="Turn learning into action"
+                    body="Register for local events and workshops to apply what you've learned and connect with others."
+                    videoSrc="/assets/unify/videos/CoreFlow5.mov"
                 />
             </section>
 
