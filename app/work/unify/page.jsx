@@ -159,6 +159,12 @@ export default function vchPage() {
                 </h4>
 
                 <CoreFlow
+                    title="Continue your learning path"
+                    body="Pick up where you left off and stay focused on what matters most next."
+                    videoSrc="/assets/unify/videos/CoreFlow1.mov"
+                />
+
+                <CoreFlow
                     title="Choose a focused topic"
                     body="Browse structured topics within each subject to learn one essential system at a time."
                     videoSrc="/assets/unify/videos/CoreFlow2.mov"
