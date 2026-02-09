@@ -11,6 +11,7 @@ const sections = [
   { id: "problem", label: "Problem" },
   { id: "solution", label: "Solution" },
   { id: "flows", label: "Core Flows" },
+  { id: "research", label: "Research" },
 //   { id: "system", label: "Design System" },
 //   { id: "reflection", label: "Reflection" },
 ];
@@ -187,6 +188,109 @@ export default function vchPage() {
                     body="Register for local events and workshops to apply what you've learned and connect with others."
                     videoSrc="/assets/unify/videos/CoreFlow5.mov"
                 />
+            </section>
+
+            <section id="research" className="scroll-mt-28 space-y-4">
+                {/* Research */}
+                <div className="space-y-4">
+                    <h4 className="text-projectHeader font-mono text-[#6B7280] uppercase tracking-[-0.01em]">
+                        Research
+                    </h4>
+                    <p className="text-mainLine tracking-tight">
+                        Researching the settlement journey in Canada
+                    </p>
+                    <p className="tracking-tight text-foreground/70">
+                        To understand where newcomers struggle most during their first months in Canada, we analyzed how settlement tasks are experienced over time. Using a mix of secondary research, online community discussions, and interviews, we identified recurring patterns in how newcomers seek information, prioritize tasks, and look for support.
+                    </p>
+                    <p className="tracking-tight text-foreground/70">
+                        Our research focused less on individual tasks and more on when guidance is needed and how it can reduce overwhelm during an already complex transition.
+                    </p>
+                </div>
+                <Image
+                    src="/assets/unify/Research.png"
+                    alt="problems"
+                    width={600}
+                    height={400}
+                    className="border border-[#E4E8EB] w-full h-auto object-cover mt-8 mb-8"
+                />
+            </section>
+
+            <section className="scroll-mt-28">
+                {/* Strategic Focus Areas */}
+                <div className="space-y-4">
+                    <h4 className="text-projectHeader font-mono text-[#6B7280] uppercase">
+                        Strategic Focus Areas
+                    </h4>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-7">
+                        <div className="space-y-3">
+                            <p className="text-[22px] tracking-tight">
+                                Primary users
+                            </p>
+                            <p className="tracking-tight text-foreground/70">
+                                Newcomers in their first few months in Canada, when unfamiliar systems and time-sensitive tasks overlap.
+                            </p>
+                        </div>
+                        <div className="space-y-3">
+                            <p className="text-[22px] tracking-tight">
+                                Key settlement topics
+                            </p>
+                            <p className="tracking-tight text-foreground/70">
+                                Finance, employment, housing, documentation, healthcare, and Canadian culture emerged as the most critical areas for early support.
+                            </p>
+                        </div>
+                        <div className="space-y-3">
+                            <p className="text-[22px] tracking-tight">
+                                Community support
+                            </p>
+                            <p className="tracking-tight text-foreground/70">
+                                Newcomers rely on informal communities for validation and advice, highlighting how human connection builds confidence.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="scroll-mt-28">
+                {/* Key Insights */}
+                <div className="space-y-4">
+                    <h4 className="text-projectHeader font-mono text-[#6B7280] uppercase">
+                        Key Insights
+                    </h4>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-7">
+                        <div className="space-y-3">
+                            <p className="text-[22px] tracking-tight">
+                                1. Uncertainty, not information, is the core challenge
+                            </p>
+                            <p className="tracking-tight text-foreground/70">
+                                Newcomers are often overwhelmed by not knowing what to do next, even when information is technically available.
+                            </p>
+                        </div>
+                        <div className="space-y-3">
+                            <p className="text-[22px] tracking-tight">
+                                2. Early settlement tasks overlap and compete for attention
+                            </p>
+                            <p className="tracking-tight text-foreground/70">
+                                During the first few months, multiple time-sensitive tasks happen at once, making prioritization and sequencing critical.
+                            </p>
+                        </div>
+                        <div className="space-y-3">
+                            <p className="text-[22px] tracking-tight">
+                                3. Community fills gaps left by fragmented systems
+                            </p>
+                            <p className="tracking-tight text-foreground/70">
+                                In the absence of clear, centralized guidance, many newcomers turn to online communities for reassurance and practical advice.
+                            </p>
+                        </div>
+                        <div className="space-y-3">
+                            <p className="text-[22px] tracking-tight">
+                                4. Learning is more effective when paired with real-world support
+                            </p>
+                            <p className="tracking-tight text-foreground/70">
+                                Access to workshops, events, and human connection helps newcomers apply knowledge and build confidence beyond reading alone.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section className="scroll-mt-28">
