@@ -64,10 +64,10 @@ export default function EnactusPage() {
                 </h4>
 
                 <ExpandableImage
-                    src="/assets/enactus/final-website.png"
+                    src="/assets/enactus/Final Website.png"
                     alt="Final Website"
-                    width={1200}
-                    height={700}
+                    width={2400}
+                    height={1600}
                     className="border border-[#E4E8EB] overflow-hidden mb-8"
                     modalClassName="max-h-[90vh] object-contain"
                 />
@@ -89,19 +89,19 @@ export default function EnactusPage() {
                 </div> */}
 
                 <ExpandableImage
-                    src="/assets/enactus/component-overview.png"
+                    src="/assets/enactus/Components Overview.png"
                     alt="Components Overview"
-                    width={1200}
-                    height={700}
+                    width={3200}
+                    height={1600}
                     className="border border-[#E4E8EB] overflow-hidden mb-10"
                     modalClassName="max-h-[90vh] object-contain"
                 />
 
                  <ExpandableImage
-                    src="/assets/enactus/component-overview-2.png"
+                    src="/assets/enactus/Components Overview 2.png"
                     alt="Components Overview 2"
-                    width={1200}
-                    height={700}
+                    width={2400}
+                    height={2100}
                     className="border border-[#E4E8EB] overflow-hidden mb-8"
                     modalClassName="max-h-[90vh] object-contain"
                 />
@@ -113,10 +113,10 @@ export default function EnactusPage() {
                     Communication
                 </h4>
                 <ExpandableImage
-                    src="/assets/enactus/communication.png"
+                    src="/assets/enactus/Communication.png"
                     alt="Communication"
-                    width={1200}
-                    height={700}
+                    width={2400}
+                    height={1800}
                     className="border border-[#E4E8EB] overflow-hidden mb-8"
                     modalClassName="max-h-[90vh] object-contain"
                 />
@@ -130,8 +130,8 @@ export default function EnactusPage() {
                 <ExpandableImage
                     src="/assets/enactus/inputs.png"
                     alt="Inputs"
-                    width={1200}
-                    height={700}
+                    width={2400}
+                    height={1200}
                     className="border border-[#E4E8EB] overflow-hidden mb-8"
                     modalClassName="max-h-[90vh] object-contain"
                 />
@@ -145,8 +145,8 @@ export default function EnactusPage() {
                 <ExpandableImage
                     src="/assets/enactus/CTA.png"
                     alt="CTA"
-                    width={1200}
-                    height={700}
+                    width={2400}
+                    height={1800}
                     className="border border-[#E4E8EB] overflow-hidden mb-8"
                     modalClassName="max-h-[90vh] object-contain"
                 />
