@@ -13,8 +13,8 @@ const sections = [
   { id: "flows", label: "Core Flows" },
   { id: "research", label: "Research" },
   { id: "ideation", label: "Ideation and Testing" },
-//   { id: "system", label: "Design System" },
-//   { id: "reflection", label: "Reflection" },
+  { id: "decisions", label: "Design Decisions" },
+  { id: "reflection", label: "Reflection" },
 ];
 
 export default function vchPage() {
@@ -396,18 +396,124 @@ export default function vchPage() {
                 />
             </section>
 
-            <section className="scroll-mt-28">
-                {/* Incomplete */}
-                    <div className="space-y-4">
-                    <h4 className="text-projectHeader font-mono text-[#6B7280] uppercase">
-                        But wait!
-                    </h4>
-                    <p className="text-mainLine tracking-tight">
-                        There's more!
-                    </p>
-                    <p className="tracking-tight text-foreground/70">
-                        Apologies, but this case study is still in progress, so you're only looking at a piece of the process. If you'd like to learn more about this project, please don't hesitate to reach out!
-                    </p>
+            <section id="decisions" className="scroll-mt-28 space-y-4 mt-20">
+                {/* Design Decisions */}
+                <h4 className="text-projectHeader font-mono text-[#6B7280] uppercase tracking-[-0.01em] mb-8">
+                    Design Decisions
+                </h4>
+                <div className="space-y-16">
+                    <div className="space-y-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8 items-start">
+                            <p className="text-[20px] tracking-tight">
+                                Subject → Topic → Lesson.
+                            </p>
+                            <p className="text-[14px] tracking-tight text-foreground/70">
+                                The journey map felt visually dense and difficult to scale as content grew. We <span className="font-semibold">restructured the information architecture into Subjects → Topics → Lessons</span>, breaking complex systems into smaller, digestible units. This modular structure reduces cognitive load, supports flexible navigation, and scales without overwhelming users.
+                            </p>
+                        </div>
+                        <ProjectVideo
+                            src="/assets/unify/videos/subject to topic.mov"
+                            className="w-full h-auto border border-[#E4E8EB]"
+                        />
+                    </div>
+                    <div className="space-y-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8 items-start">
+                            <p className="text-[20px] tracking-tight">
+                                Topic level progress.
+                            </p>
+                            <p className="text-[14px] tracking-tight text-foreground/70">
+                                A centralized map made progress feel abstract and intimidating. We shifted to <span className="font-semibold">tracking progress at the topic level</span>, allowing users to complete smaller, focused milestones. This makes progress <span className="font-semibold">clearer, more achievable, and easier to return to over time</span>.
+                            </p>
+                        </div>
+                        <ProjectVideo
+                            src="/assets/unify/videos/topic progress.mov"
+                            className="w-full h-auto border border-[#E4E8EB]"
+                        />
+                    </div>
+                    <div className="space-y-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8 items-start">
+                            <p className="text-[20px] tracking-tight">
+                                Resuming the last lesson.
+                            </p>
+                            <p className="text-[14px] tracking-tight text-foreground/70">
+                                Users often return after time away. We surfaced a “<span className="font-semibold">resume last lesson</span>” shortcut to minimize friction and help users immediately continue where they left off.
+                            </p>
+                        </div>
+                        <ProjectVideo
+                            src="/assets/unify/videos/resuming last lesson.mov"
+                            className="w-full h-auto border border-[#E4E8EB]"
+                        />
+                    </div>
+                    <div className="space-y-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8 items-start">
+                            <p className="text-[20px] tracking-tight">
+                                Highlighting incomplete lessons.
+                            </p>
+                            <p className="text-[14px] tracking-tight text-foreground/70">
+                                Users need visibility into unfinished work. By clearly <span className="font-semibold">marking incomplete lessons within each topic</span>, we reinforced progress awareness and encouraged completion without forcing a linear path.
+                            </p>
+                        </div>
+                        <ProjectVideo
+                            src="/assets/unify/videos/highlighting lessons.mov"
+                            className="w-full h-auto border border-[#E4E8EB]"
+                        />
+                    </div>
+                    <div className="space-y-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8 items-start">
+                            <p className="text-[20px] tracking-tight">
+                                Knowledge checks.
+                            </p>
+                            <p className="text-[14px] tracking-tight text-foreground/70">
+                                Mandatory assessments risked making the experience feel like a formal course. We introduced <span className="font-semibold">optional quick checks</span> to reinforce understanding without blocking progress. This preserves <span className="font-semibold">psychological safety while supporting retention</span>.
+                            </p>
+                        </div>
+                        <ProjectVideo
+                            src="/assets/unify/videos/knowledge checks.mov"
+                            className="w-full h-auto border border-[#E4E8EB]"
+                        />
+                    </div>
+                    <div className="space-y-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8 items-start">
+                            <p className="text-[20px] tracking-tight">
+                                Integrating local events.
+                            </p>
+                            <p className="text-[14px] tracking-tight text-foreground/70">
+                                Information alone does not always translate into action. <span className="font-semibold">By embedding community events directly within the product</span>, Unify connects digital learning with real-world support. This transforms the platform from static content into an <span className="font-semibold">active settlement ecosystem</span>.
+                            </p>
+                        </div>
+                        <ProjectVideo
+                            src="/assets/unify/videos/local events.mov"
+                            className="w-full h-auto border border-[#E4E8EB]"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section id="reflection" className="scroll-mt-28 mt-20">
+                {/* Reflection */}
+                <h4 className="projectHeader font-mono text-[#6B7280] uppercase mb-4">
+                    Reflection
+                </h4>
+                <p className="text-mainLine tracking-tight">
+                    What I Learned
+                </p>
+                <div className="mt-7 grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-7">
+                    <div className="space-y-3">
+                        <p className="text-[20px] tracking-tight">
+                            The best product decisions happen when developers are involved early.
+                        </p>
+                        <p className="tracking-tight text-foreground/70">
+                            Designing alongside developers from the start helped surface constraints, clarify trade-offs, and reduce rework. Collaboration early on ensured ideas were not just desirable, but feasible.
+                        </p>
+                    </div>
+                    <div className="space-y-3">
+                        <p className="text-[20px] tracking-tight">
+                            Constraints don't limit ideas — they sharpen them.
+                        </p>
+                        <p className="tracking-tight text-foreground/70">
+                            Technical limits don't weaken ideas — they refine them. By grounding concepts in prototypes and clear examples, I learned to align ambition with implementation and deliver solutions that could realistically ship.
+                        </p>
+                    </div>
                 </div>
             </section>
 
