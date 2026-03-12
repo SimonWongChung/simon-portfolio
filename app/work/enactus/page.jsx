@@ -116,7 +116,7 @@ export default function EnactusPage() {
                     src="/assets/enactus/Communication.png"
                     alt="Communication"
                     width={2400}
-                    height={1800}
+                    height={1700}
                     className="border border-[#E4E8EB] overflow-hidden mb-8"
                     modalClassName="max-h-[90vh] object-contain"
                 />
