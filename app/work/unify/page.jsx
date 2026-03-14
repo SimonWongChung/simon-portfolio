@@ -34,7 +34,7 @@ export default function vchPage() {
             <section className="scroll-mt-28 mb-24">
                 <ProjectOverview
                     breadcrumb="Unify"
-                    title="Supporting"
+                    title="Supporting newcomers in Canada"
                     role="Product Designer"
                     timeline="January - March 2025"
                     // team="3 Designers"
