@@ -123,7 +123,7 @@ export default function RecoverTogetherPage() {
                 </h4>
                 <p className="mt-3">Recover Together is a mobile application that enables displaced residents to post requests for assistance and allows volunteers to view and offer the needed help. The intent is to bridge the gap between impacted residents seeking resources and community volunteers offering those resources.</p>
                 <ProjectVideo
-                    src="/assets/recover/initial-solution.mov"
+                    src="/assets/recover/initial-solution.mp4"
                     className="w-full h-auto mt-4 border border-[#E4E8EB]"
                 />
             </section>
@@ -138,7 +138,7 @@ export default function RecoverTogetherPage() {
                     sectionLabel="LEARNINGS"
                     title="Make a Help Request"
                     body="Our research showed that displaced residents faced a significant challenge in finding resources. To address this issue, the New Request tab allows impacted residents to post requests for help. They can specify the resources or skills needed and provide an accompanying description and location."
-                    videoSrc="/assets/recover/videos/Make_A_Request.mov"
+                    videoSrc="/assets/recover/videos/Make_A_Request.mp4"
                     // imageBgClass="bg-[#E5BB9F]"
                 />
 
@@ -146,21 +146,21 @@ export default function RecoverTogetherPage() {
                     sectionLabel="LEARNINGS"
                     title="Offer Help"
                     body="Volunteers often have difficulty finding effective ways to support wildfire relief with the resources they have. Recover Together lets users browse community help requests and offer assistance where needed. Requests are organized by tags, and users can apply filters to quickly find categories that match their abilities, reducing cognitive overload and streamlining the search for meaningful opportunities."
-                    videoSrc="/assets/recover/videos/Offer_Help.mov"
+                    videoSrc="/assets/recover/videos/Offer_Help.mp4"
                 />
 
                 <ProjectTwoColumn
                     sectionLabel="LEARNINGS"
                     title="Accepting an Offer to Help"
                     body="To accept a volunteer's offer to help, users can start by chatting with the volunteer through in-app messaging. After the conversation, they can officially accept the offer right in the chat. There's also a location-sharing feature to make coordinating resource drop-offs easier."
-                    videoSrc="/assets/recover/videos/Accept_Help.mov"
+                    videoSrc="/assets/recover/videos/Accept_Help.mp4"
                 />
 
                 <ProjectTwoColumn
                     sectionLabel="LEARNINGS"
                     title="View Activity and Notifications"
                     body="In the Activity page, within the Request tab, users can see an overview of notifications and the status of their posted requests for help or offers to provide help. The My Requests and My Offers pages allow users to view and track their current and past requests and offers."
-                    videoSrc="/assets/recover/videos/Accept_Help.mov"
+                    videoSrc="/assets/recover/videos/Accept_Help.mp4"
                 />
             </section>
 
@@ -241,7 +241,7 @@ export default function RecoverTogetherPage() {
                         Making a help request post — Impacted Resident
                     </p>
                     <ProjectVideo
-                        src="/assets/recover/videos/Making_a_Help_Request.mov"
+                        src="/assets/recover/videos/Making_a_Help_Request.mp4"
                         className="w-full h-auto border border-[#E4E8EB]"
                     />
                     <p className="text-[15px] mt-2">
@@ -254,7 +254,7 @@ export default function RecoverTogetherPage() {
                         Accepting an offer to help — Impacted Resident
                     </p>
                     <ProjectVideo
-                        src="/assets/recover/videos/Accepting_an_Offer_to_Help.mov"
+                        src="/assets/recover/videos/Accepting_an_Offer_to_Help.mp4"
                         className="w-full h-auto border border-[#E4E8EB]"
                     />
                     <p className="text-[15px] mt-2">
@@ -267,7 +267,7 @@ export default function RecoverTogetherPage() {
                         Offering assistance to a help request post — Volunteer
                     </p>
                     <ProjectVideo
-                        src="/assets/recover/videos/Offering_Help.mov"
+                        src="/assets/recover/videos/Offering_Help.mp4"
                         className="w-full h-auto border border-[#E4E8EB]"
                     />
                     <p className="text-[15px] mt-2">

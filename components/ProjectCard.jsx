@@ -35,6 +35,7 @@
 // }
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ProjectCard({
   title,
@@ -59,9 +60,12 @@ export default function ProjectCard({
             playsInline
           />
         ) : (
-          <img
+          <Image
             src={thumbnail}
             alt={title}
+            width={1490}
+            height={892}
+            sizes="(min-width: 768px) 50vw, 100vw"
             className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-[1.03] border border-border-light"
           />
         )}

@@ -46,7 +46,7 @@ export default function vchPage() {
                         "UX Design",
                         "Prototyping",
                     ]}
-                    heroImage="/assets/unify/unify-project-preview.mov"
+                    heroImage="/assets/unify/unify-project-preview.mp4"
                     mediaType="video"
                 />
             </section>
@@ -150,7 +150,7 @@ export default function vchPage() {
                     </p>
                 </div>
                 <ProjectVideo
-                    src="/assets/unify/videos/Solution Video.mov"
+                    src="/assets/unify/videos/Solution Video.mp4"
                     className="w-full h-auto mt-8 border border-[#E4E8EB]"
                 />
             </section>
@@ -164,31 +164,31 @@ export default function vchPage() {
                 <CoreFlow
                     title="Continue your learning path"
                     body="Pick up where you left off and stay focused on what matters most next."
-                    videoSrc="/assets/unify/videos/CoreFlow1.mov"
+                    videoSrc="/assets/unify/videos/CoreFlow1.mp4"
                 />
 
                 <CoreFlow
                     title="Choose a focused topic"
                     body="Browse structured topics within each subject to learn one essential system at a time."
-                    videoSrc="/assets/unify/videos/CoreFlow2.mov"
+                    videoSrc="/assets/unify/videos/CoreFlow2.mp4"
                 />
 
                 <CoreFlow
                     title="Learn at your own pace"
                     body="Read clear, step-by-step lessons designed for newcomers with no prior context."
-                    videoSrc="/assets/unify/videos/CoreFlow3.mov"
+                    videoSrc="/assets/unify/videos/CoreFlow3.mp4"
                 />
 
                 <CoreFlow
                     title="Quick check, no pressure"
                     body="Optionally review key ideas to reinforce understanding before moving on."
-                    videoSrc="/assets/unify/videos/CoreFlow4.mov"
+                    videoSrc="/assets/unify/videos/CoreFlow4.mp4"
                 />
 
                 <CoreFlow
                     title="Turn learning into action"
                     body="Register for local events and workshops to apply what you've learned and connect with others."
-                    videoSrc="/assets/unify/videos/CoreFlow5.mov"
+                    videoSrc="/assets/unify/videos/CoreFlow5.mp4"
                 />
             </section>
 
@@ -317,7 +317,7 @@ export default function vchPage() {
                 <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8">
                     <div className="border border-[#E4E8EB] bg-[#F7F7F7]">
                         <ProjectVideo
-                            src="/assets/unify/videos/Idea1.mov"
+                            src="/assets/unify/videos/Idea1.mp4"
                             className="w-full h-auto"
                         />
                         <div className="border border-[#E4E8EB] ml-4 mr-4"></div>
@@ -328,7 +328,7 @@ export default function vchPage() {
 
                     <div className="border border-[#E4E8EB] bg-[#F7F7F7]">
                         <ProjectVideo
-                            src="/assets/unify/videos/Idea2.mov"
+                            src="/assets/unify/videos/Idea2.mp4"
                             className="w-full h-auto"
                         />
                         <div className="border border-[#E4E8EB] ml-4 mr-4"></div>
@@ -412,7 +412,7 @@ export default function vchPage() {
                             </p>
                         </div>
                         <ProjectVideo
-                            src="/assets/unify/videos/subject to topic.mov"
+                            src="/assets/unify/videos/subject to topic.mp4"
                             className="w-full h-auto border border-[#E4E8EB]"
                         />
                     </div>
@@ -426,7 +426,7 @@ export default function vchPage() {
                             </p>
                         </div>
                         <ProjectVideo
-                            src="/assets/unify/videos/topic progress.mov"
+                            src="/assets/unify/videos/topic progress.mp4"
                             className="w-full h-auto border border-[#E4E8EB]"
                         />
                     </div>
@@ -440,7 +440,7 @@ export default function vchPage() {
                             </p>
                         </div>
                         <ProjectVideo
-                            src="/assets/unify/videos/resuming last lesson.mov"
+                            src="/assets/unify/videos/resuming last lesson.mp4"
                             className="w-full h-auto border border-[#E4E8EB]"
                         />
                     </div>
@@ -454,7 +454,7 @@ export default function vchPage() {
                             </p>
                         </div>
                         <ProjectVideo
-                            src="/assets/unify/videos/highlighting lessons.mov"
+                            src="/assets/unify/videos/highlighting lessons.mp4"
                             className="w-full h-auto border border-[#E4E8EB]"
                         />
                     </div>
@@ -468,7 +468,7 @@ export default function vchPage() {
                             </p>
                         </div>
                         <ProjectVideo
-                            src="/assets/unify/videos/knowledge checks.mov"
+                            src="/assets/unify/videos/knowledge checks.mp4"
                             className="w-full h-auto border border-[#E4E8EB]"
                         />
                     </div>
@@ -482,7 +482,7 @@ export default function vchPage() {
                             </p>
                         </div>
                         <ProjectVideo
-                            src="/assets/unify/videos/local events.mov"
+                            src="/assets/unify/videos/local events.mp4"
                             className="w-full h-auto border border-[#E4E8EB]"
                         />
                     </div>

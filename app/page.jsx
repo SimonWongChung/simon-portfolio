@@ -28,7 +28,7 @@ export default function Home() {
         category="Product Design"
         year="2025"
         description="Designing a mobile app to guide newcomers in Canada."
-        thumbnail="/assets/work/unify-work.mov"
+        thumbnail="/assets/work/unify-work.mp4"
         href="/work/unify"
         mediaType="video"
       />

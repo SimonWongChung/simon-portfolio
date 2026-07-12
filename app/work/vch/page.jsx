@@ -135,7 +135,7 @@ export default function vchPage() {
                     </p>
                 </div>
                 <ProjectVideo
-                    src="/assets/vch/videos/Solution_compressed.mov"
+                    src="/assets/vch/videos/Solution_compressed.mp4"
                     className="w-full h-auto mt-8 border border-[#E4E8EB]"
                 />
             </section>
@@ -154,7 +154,7 @@ export default function vchPage() {
                             By mirroring real-world use, users are able to build accurate mental models of the system, gain confidence in their actions, and understand the purpose behind each task rather than following arbitrary steps.
                         </p>
                         <ProjectVideo
-                            src="/assets/vch/videos/DesignDecision-1-Scenarios.mov"
+                            src="/assets/vch/videos/DesignDecision-1-Scenarios.mp4"
                             className="w-full h-auto mt-5 border border-[#E4E8EB]"
                         />
                     </div>
@@ -166,7 +166,7 @@ export default function vchPage() {
                             Users are immersed directly within the platform, with contextual hotspots guiding attention to the correct actions at each step.
                         </p>
                         <ProjectVideo
-                            src="/assets/vch/videos/DesignDecision-2.mov"
+                            src="/assets/vch/videos/DesignDecision-2.mp4"
                             className="w-full h-auto mt-5 border border-[#E4E8EB]"
                         />
                     </div>
@@ -178,7 +178,7 @@ export default function vchPage() {
                             Each step within the simulation was explicitly described to support users with varied levels of digital literacy and reduce reliance on prior system knowledge.
                         </p>
                         <ProjectVideo
-                            src="/assets/vch/videos/DesignDecision-3-Steps.mov"
+                            src="/assets/vch/videos/DesignDecision-3-Steps.mp4"
                             className="w-full h-auto mt-5 border border-[#E4E8EB]"
                         />
                     </div>
@@ -190,7 +190,7 @@ export default function vchPage() {
                             I applied progressive disclosure by breaking complex workflows into short, focused units, allowing users to learn tasks incrementally and choose where to start or return as needed.
                         </p>
                         <ProjectVideo
-                            src="/assets/vch/videos/DesignDecision-4-Complex.mov"
+                            src="/assets/vch/videos/DesignDecision-4-Complex.mp4"
                             className="w-full h-auto mt-5 border border-[#E4E8EB]"
                         />
                     </div>
@@ -202,7 +202,7 @@ export default function vchPage() {
                             Using instructional design principles, I introduced self-assessments that allowed users to validate their understanding, reinforce learning, and build a sense of ownership before returning to the live system.
                         </p>
                         <ProjectVideo
-                            src="/assets/vch/videos/DesignDecision-5-Assessment.mov"
+                            src="/assets/vch/videos/DesignDecision-5-Assessment.mp4"
                             className="w-full h-auto mt-5 border border-[#E4E8EB]"
                         />
                     </div>
