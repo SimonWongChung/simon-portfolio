@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 
 export default function ProjectVideo({
   src,
@@ -10,6 +10,25 @@ export default function ProjectVideo({
   muted = true,
 }) {
   const videoRef = useRef(null);
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "300px 0px" }
+    );
+
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, []);
 
   const togglePlay = () => {
     const video = videoRef.current;
@@ -21,7 +40,8 @@ export default function ProjectVideo({
   return (
     <video
       ref={videoRef}
-      src={src}
+      src={inView ? src : undefined}
+      preload="none"
       autoPlay={autoPlay}
       loop={loop}
       muted={muted}

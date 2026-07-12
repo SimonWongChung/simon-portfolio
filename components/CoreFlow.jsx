@@ -1,5 +1,8 @@
+"use client";
+
 // components/CoreFlow.jsx
 import Image from "next/image";
+import { useRef, useState, useEffect } from "react";
 
 const CoreFlow = ({
   sectionLabel,
@@ -14,6 +17,27 @@ const CoreFlow = ({
   const imageWrapperOrder = reverseOnDesktop ? "md:order-2" : "";
   const textWrapperOrder = reverseOnDesktop ? "md:order-1" : "";
 
+  const videoRef = useRef(null);
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "300px 0px" }
+    );
+
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="scroll-mt-28">
 
@@ -26,8 +50,10 @@ const CoreFlow = ({
             {/* If videoSrc exists → show video; else show image */}
             {videoSrc ? (
               <video
-                src={videoSrc}
-                autoPlay 
+                ref={videoRef}
+                src={inView ? videoSrc : undefined}
+                preload="none"
+                autoPlay
                 loop
                 muted
                 playsInline
