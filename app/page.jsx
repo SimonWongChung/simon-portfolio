@@ -8,7 +8,7 @@ export default function Home() {
       <div className="text-hero font-medium tracking-extra-tight max-w-4xl">
         Simon is a product designer who helps people find their footing in unfamiliar systems.
       </div>
-      <div className="text-subHero tracking-tight max-w-3xl mt-4 text-text-subHero">
+      <div className="text-subHero tracking-tight max-w-4xl mt-4 text-text-subHero">
         Currently designing @ Nokia. Previously designed @ Vancouver Coastal Health.
       </div>
     </main>
@@ -21,6 +21,7 @@ export default function Home() {
         // description="Created an onboarding program for Providence Health Care's new workforce management software."
         thumbnail="/assets/work/vch.png"
         href="/work/vch"
+        titleClassName="max-w-[650px]"
       />
 
       <ProjectCard
@@ -30,6 +31,7 @@ export default function Home() {
         // description="Designing a mobile app to guide newcomers in Canada."
         thumbnail="/assets/work/unify-work.mp4"
         href="/work/unify"
+        titleClassName="max-w-[650px]"
         mediaType="video"
       />
 
@@ -40,6 +42,7 @@ export default function Home() {
         // description="Developed core tokens and UI components for Enactus SFU."
         thumbnail="/assets/work/enactus.png"
         href="/work/enactus"
+        titleClassName="max-w-[650px]"
       />
 
       <ProjectCard
@@ -49,6 +52,7 @@ export default function Home() {
         // description="Designing a mobile app to streamline post-wildfire recovery."
         thumbnail="/assets/work/RecoverTogether.png"
         href="/work/recover"
+        titleClassName="max-w-[600px]"
       />
     </div>
     </>

@@ -45,6 +45,7 @@ export default function ProjectCard({
   thumbnail,
   href,
   mediaType = "image", // Default to image if not specified
+  titleClassName = "",
 }) {
   return (
     <Link href={href} className="group block"> 
@@ -71,11 +72,11 @@ export default function ProjectCard({
         )}
       </div>
       <div className="group-hover:opacity-60 transition-opacity duration-150 mt-3 font-medium">
-        <div className="text-[16px] text-text-date tracking-tight">
+        <div className="text-[16px] text-text-date font-mono tracking-tight">
             {category} • {year}
         </div>
 
-        <h3 className="text-[20px] text-text-projectName font-mono tracking-extra-tight">
+        <h3 className={`text-[20px] text-text-projectName tracking-tight ${titleClassName}`}>
             {title}
         </h3>
 
