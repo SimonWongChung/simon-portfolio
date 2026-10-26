@@ -5,9 +5,11 @@ import Image from "next/image";
 export default function ProjectOverview({
   breadcrumb,
   title,
+  summary,
   role,
   timeline,
   team,
+  teamLabel = "Team",
   skills,
   heroImage,
   mediaType = "image", // Default to image if not specified
@@ -20,9 +22,16 @@ export default function ProjectOverview({
       </div>
 
       {/* Title */}
-      <div className="text-projectTitle text-text-projectTitle max-w-3xl mb-8">
+      <div className={`text-projectTitle text-text-projectTitle max-w-3xl ${summary ? "mb-4" : "mb-8"}`}>
         {title}
       </div>
+
+      {/* Summary (optional) */}
+      {summary && (
+        <p className="text-[18px] leading-7 tracking-tight text-foreground/70 mb-8">
+          {summary}
+        </p>
+      )}
 
       {/* Hero image */}
       {/* <div className="border border-[#E4E8EB] overflow-hidden mb-8">
@@ -68,7 +77,7 @@ export default function ProjectOverview({
           <div className="text-foreground text-highlight tracking-tight">{timeline}</div>
         </div>
         <div>
-          <div className="text-highlight uppercase text-[#6B7280] font-mono mb-1">Team</div>
+          <div className="text-highlight uppercase text-[#6B7280] font-mono mb-1">{teamLabel}</div>
 
           <div className="text-foreground text-highlight tracking-tight">
             {team.map((member) => (

@@ -15,6 +15,17 @@ export default function Home() {
 
     <div className="app-container px-6 mb-32 grid grid-cols-1 md:grid-cols-2 gap-[58px_12px]">
       <ProjectCard
+        title="Designing how teams monitor and deploy AI agents on Nokia's agent-building platform"
+        category="Nokia"
+        year="Internship 2026 (In progress)"
+        // description="Created an onboarding program for Providence Health Care's new workforce management software."
+        thumbnail="/assets/work/nokia.mp4"
+        href="/work/nokia"
+        titleClassName="max-w-[600px]"
+        mediaType="video"
+      />
+      
+      <ProjectCard
         title="Helping thousands of healthcare staff adopt new workforce software at Vancouver Coastal Health"
         category="Vancouver Coastal Health (VCH)"
         year="Internship 2025"

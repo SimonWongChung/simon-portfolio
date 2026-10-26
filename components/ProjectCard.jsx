@@ -54,7 +54,7 @@ export default function ProjectCard({
           <video
             src={thumbnail}
             alt={title}
-            className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-[1.03] border border-border-light"
+            className="w-full h-auto aspect-[1490/892] object-cover transition-transform duration-300 group-hover:scale-[1.03] border border-border-light"
             autoPlay
             loop
             muted
