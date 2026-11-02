@@ -5,6 +5,7 @@ import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import ProjectVideo from "@/components/ProjectVideo";
 import ProjectTwoColumn from "@/components/ProjectTwoColumn";
+import NdaNotice from "@/components/NdaNotice";
 
 const sections = [
   { id: "overview", label: "Overview" },
@@ -16,7 +17,7 @@ const sections = [
 //   { id: "reflection", label: "Reflection" },
 ];
 
-export default function vchPage() {
+export default function nokiaPage() {
   return (
     <main className="app-container px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_minmax(0,768px)_1fr] gap-x-8">
@@ -70,8 +71,8 @@ export default function vchPage() {
                 />
             </section>
 
+            <NdaNotice company="Nokia" />
 
-            
             </article>
 
             {/* Column 3 – right flexible column */}
