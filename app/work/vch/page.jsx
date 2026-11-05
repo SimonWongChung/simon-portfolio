@@ -48,6 +48,16 @@ export default function vchPage() {
                 />
             </section>
 
+            <section id="impact" className="scroll-mt-28 space-y-4">
+                {/* Impact */}
+                <h4 className="text-projectHeader font-mono text-[#6B7280] uppercase">
+                    Impact
+                </h4>
+                <p className="tracking-tight">
+                    Supported the rollout of a new workforce management system to <span className="font-semibold">8,000+ employees and managers</span> by designing role-based onboarding, guided simulations, and scalable training documentation for payroll-sensitive workflows.
+                </p>
+            </section>
+
             <section id="overview" className="scroll-mt-28 space-y-4">
                 {/* Overview */}
                 <h4 className="text-projectHeader font-mono text-[#6B7280] uppercase">
